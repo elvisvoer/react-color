@@ -46,7 +46,7 @@ export default {
   },
 
   isValidHex(hex) {
-    return tinycolor(hex).isValid()
+    return hex.length !== 5 && hex.length < 8 && tinycolor(hex).isValid()
   },
 
   getContrastingColor(data) {
