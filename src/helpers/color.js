@@ -51,6 +51,10 @@ export default {
     return hex.length !== (4 + lh) && hex.length < (7 + lh) && tinycolor(hex).isValid()
   },
 
+  isValidTinyColor(hex) {
+    return tinycolor(hex).isValid()
+  },
+
   getContrastingColor(data) {
     if (!data) {
       return '#fff'
