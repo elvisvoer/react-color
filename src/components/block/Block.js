@@ -10,7 +10,7 @@ export const Block = ({ onChange, onSwatchHover, hex, colors, width, triangle,
   className = '' }) => {
   const transparent = hex === 'transparent'
   const handleChange = (hexCode, e) => {
-    color.isValidHex(hexCode) && onChange({
+    color.isValidTinyColor(hexCode) && onChange({
       hex: hexCode,
       source: 'hex',
     }, e)
